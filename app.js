@@ -28,6 +28,7 @@ const PageTransition = () => {
 
       const element = document.getElementById(id);
       element.classList.add("active");
+      element.scrollIntoView({ behavior: "smooth" });
     }
   });
 };
