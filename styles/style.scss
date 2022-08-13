@@ -57,6 +57,7 @@ section {
 .container {
   transition: all .4s ease-in-out;
   background-color: var(--color-primary);
+  
 }
 
 // .section__title {
@@ -92,7 +93,7 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 
-  .active-btn {
+  .active-btn{
     background-color: var(--color-secondary) !important;
     transition: all .4s ease-in-out;
 
