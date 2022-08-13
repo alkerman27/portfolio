@@ -54,32 +54,6 @@ section {
   transition: all .4s ease-in-out;
 }
 
-.container {
-  transition: all .4s ease-in-out;
-  background-color: var(--color-primary);
-  
-}
-
-// .section__title {
-//   max-width: 80rem;
-//   margin: 0 auto 8rem auto;
-// }
-
-// .section__description {
-//   font-size: 1.8rem;
-//   font-weight: 600;
-//   text-transform: uppercase;
-//   color: var(--color-primary);
-//   margin-bottom: 1rem;
-// }
-
-// .section__header {
-//   font-size: 4rem;
-//   line-height: 1.3;
-//   font-weight: 500;
-// }
-
-
 
 //Controls
 .controls {
@@ -129,6 +103,10 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
+  background-image: linear-gradient(to left,rgba(70, 75, 82, 0.801),rgba(18, 25, 31, 1)), url(../images/man2.jpg);
+  background-size: cover;
+  background-position: top;
+  
   .left-header {
     display: flex;
     align-items: center;
@@ -139,14 +117,13 @@ section {
       width: 100%;
       height: 100%;
       background-color: var(--color-secondary);
-      // background-image: url(../images/firery.jpg);
-      // background-size: cover;
-      // background-position: center; 
+      background-size: cover;
+      background-position: center; 
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
-      clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+      z-index: 1;
+      clip-path: polygon(0 0, 20% 0, 40% 100%, 0% 100%);
     }
    
   }
@@ -156,7 +133,8 @@ section {
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
-
+    
+   
     .name {
       font-size: 4.2rem;
       span{

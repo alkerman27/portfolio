@@ -53,11 +53,6 @@ section {
   transition: all 0.4s ease-in-out;
 }
 
-.container {
-  transition: all 0.4s ease-in-out;
-  background-color: var(--color-primary);
-}
-
 .controls {
   position: fixed;
   z-index: 10;
@@ -99,6 +94,9 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
+  background-image: linear-gradient(to left, rgba(70, 75, 82, 0.801), rgb(18, 25, 31)), url(../images/man2.jpg);
+  background-size: cover;
+  background-position: top;
 }
 .header-content .left-header {
   display: flex;
@@ -110,12 +108,14 @@ section {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
+  background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 20% 0, 40% 100%, 0% 100%);
+          clip-path: polygon(0 0, 20% 0, 40% 100%, 0% 100%);
 }
 .header-content .right-header {
   display: flex;
